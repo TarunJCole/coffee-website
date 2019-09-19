@@ -2,9 +2,13 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 4rem;
+  padding: 1rem 5rem;
   background: #333;
   color: #fafafa;
+}
+
+header nav h1 {
+  font-size: 2rem;
 }
 
 header nav ul {
@@ -13,5 +17,12 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0 1.5rem;
+  font-size: 1.1rem;
+  margin: 1rem 1.5rem;
+  border-bottom: transparent 2px solid;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  border-bottom: #fafafa 2px solid;
 }
