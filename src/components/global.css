@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "BioRhyme", serif;
 }
