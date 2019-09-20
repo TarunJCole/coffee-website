@@ -10,10 +10,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section id="landing">
-      <h1>Coffee House</h1>
-      <p className="lead">
-        Freshly brewed coffee. Warm and friendly atmosphere.
-      </p>
+      <div className="title">
+        <h1>Coffee House</h1>
+        <p className="lead">
+          Freshly brewed coffee. Warm and friendly atmosphere.
+        </p>
+      </div>
     </section>
   </Layout>
 )

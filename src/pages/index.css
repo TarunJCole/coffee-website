@@ -1,11 +1,17 @@
 #landing {
   min-width: 100vw;
   min-height: 100vh;
-  background: url(../images/coffee/coffee.jpg) no-repeat center 0% / cover fixed;
+  background: url(../images/coffee/coffee-edit.jpg) no-repeat center 40% / cover
+    fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+#landing .title {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 #landing h1 {
