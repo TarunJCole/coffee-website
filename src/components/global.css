@@ -25,3 +25,17 @@ h5,
 h6 {
   font-family: "BioRhyme", serif;
 }
+
+/* Icons */
+.footer-facebook-icon,
+.footer-twitter-icon {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-facebook-icon:hover {
+  color: #3c5a99;
+}
+
+.footer-twitter-icon:hover {
+  color: #00aced;
+}

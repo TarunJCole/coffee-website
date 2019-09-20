@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { IconContext } from "react-icons"
+import { FaFacebook, FaTwitter, FaEnvelope, FaPhone } from "react-icons/fa"
 import footerStyle from "./footer.module.css"
 
 export default function Footer() {
@@ -18,16 +20,45 @@ export default function Footer() {
         <h3>Contact Us</h3>
         <ul>
           <li>
-            Email: <br />
+            <IconContext.Provider value={{ size: "2rem" }}>
+              <FaEnvelope />
+            </IconContext.Provider>
+            <br />
             email@email.com
           </li>
           <li>
-            Phone: <br />
+            <IconContext.Provider value={{ size: "2rem" }}>
+              <FaPhone />
+            </IconContext.Provider>
+            <br />
             01234 567890
           </li>
         </ul>
       </div>
-      <div>social</div>
+      <div>
+        <a href="https://www.facebook.com">
+          <IconContext.Provider
+            value={{
+              size: "3.5rem",
+              style: { margin: "0 1rem" },
+              className: "footer-facebook-icon",
+            }}
+          >
+            <FaFacebook />
+          </IconContext.Provider>
+        </a>
+        <a href="https://www.twitter.com">
+          <IconContext.Provider
+            value={{
+              size: "3.5rem",
+              style: { margin: "0 1rem" },
+              className: "footer-twitter-icon",
+            }}
+          >
+            <FaTwitter />
+          </IconContext.Provider>
+        </a>
+      </div>
     </footer>
   )
 }
