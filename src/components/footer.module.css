@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+  /* remove this margin */
+  margin-top: 500px;
+  /* remove this margin */
+  background: var(--dark-color);
+  color: var(--light-color);
+  font-size: 1.1rem;
+}
+
+footer div {
+  padding: 2rem;
+}
+
+footer div h3 {
+  padding: 0.2rem;
+  text-decoration: underline;
+}
+
+footer div ul {
+  list-style: none;
+  line-height: 1.5;
+}
+
+footer div ul li {
+  margin: 1rem 0;
+}
