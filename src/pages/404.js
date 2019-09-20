@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import "../components/global.css"
+
 export default function not_found() {
   return (
     <div
