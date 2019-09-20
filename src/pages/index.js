@@ -4,10 +4,17 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import "./index.css"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Index</h1>
+    <section id="landing">
+      <h1>Coffee House</h1>
+      <p className="lead">
+        Freshly brewed coffee. Warm and friendly atmosphere.
+      </p>
+    </section>
   </Layout>
 )
 

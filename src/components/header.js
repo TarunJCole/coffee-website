@@ -7,7 +7,7 @@ export default function Header() {
     <header style={headerStyle} id="page-header">
       <nav>
         <div>
-          <h1>Coffee House</h1>
+          <h2>Coffee House</h2>
         </div>
         <div>
           <ul>

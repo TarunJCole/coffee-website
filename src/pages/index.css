@@ -1,0 +1,19 @@
+#landing {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url(../images/coffee/coffee.jpg) no-repeat center 0% / cover fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#landing h1 {
+  font-size: 4rem;
+  color: var(--light-color);
+}
+
+#landing p.lead {
+  font-size: 1.25rem;
+  color: var(--light-color);
+}
