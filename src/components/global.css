@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap");
 
+/* var */
+html {
+  --dark-color: #333;
+  --light-color: #fafafa;
+  --primary-color: rgb(255, 232, 205);
+  --secondary-color: rgb(255, 216, 172);
+}
+
+/* reset + main font */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +16,7 @@
   font-family: "Cabin", sans-serif;
 }
 
+/* header font */
 h1,
 h2,
 h3,
