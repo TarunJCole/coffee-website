@@ -6,8 +6,9 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
-  background: #333e;
+  background: transparent;
   color: var(--light-color);
+  transition: background 0.4s ease-in-out;
 }
 
 header nav h2 {
