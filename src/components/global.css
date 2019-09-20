@@ -40,3 +40,8 @@ h6 {
 .footer-twitter-icon:hover {
   color: #00aced;
 }
+
+/* utils */
+.scrolled {
+  background: var(--dark-color);
+}
