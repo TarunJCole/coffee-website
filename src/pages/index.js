@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { Link as ScrollLink } from "react-scroll"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,8 +19,11 @@ const IndexPage = ({ data }) => (
           Freshly brewed coffee. Warm and friendly atmosphere.
         </p>
       </div>
+      <ScrollLink className="btn" to="cards" smooth={true} offset={-87}>
+        See What We're About
+      </ScrollLink>
     </section>
-    <section className="cards">
+    <section className="cards" name="cards">
       <div className="card">
         <div className="card-text">
           <h2>Expertly Roasted & Brewed Coffee</h2>

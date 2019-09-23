@@ -45,3 +45,17 @@ h6 {
 .scrolled {
   background: var(--dark-color);
 }
+
+.btn {
+  border: 2px solid var(--dark-color);
+  color: var(--dark-color);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
