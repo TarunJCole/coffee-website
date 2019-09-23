@@ -36,6 +36,7 @@ export default function Footer() {
         </ul>
       </div>
       <div>
+        <h3 style={{ marginBottom: "1rem" }}>Follow Us</h3>
         <a href="https://www.facebook.com">
           <IconContext.Provider
             value={{
