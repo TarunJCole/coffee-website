@@ -29,13 +29,7 @@ main {
 }
 
 /* cards */
-section.cards {
-  padding: 4rem 2rem;
-}
-
 section.cards .card {
-  max-width: 80%;
-  margin: 5rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
