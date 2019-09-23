@@ -4,8 +4,8 @@
 html {
   --dark-color: #333;
   --light-color: #fafafa;
-  --primary-color: rgb(255, 232, 205);
-  --secondary-color: rgb(255, 216, 172);
+  --primary-color: rgb(255, 241, 226);
+  --secondary-color: rgb(255, 224, 188);
 }
 
 /* reset + main font */
