@@ -9,6 +9,7 @@ header nav {
   background: transparent;
   color: var(--light-color);
   transition: background 0.4s ease-in-out;
+  z-index: 2;
 }
 
 header nav h2 {
@@ -25,8 +26,9 @@ header nav ul li {
   margin: 1rem 1.5rem;
   border-bottom: transparent 2px solid;
   cursor: pointer;
+  transition: border 0.3s ease-in-out;
 }
 
 header nav ul li:hover {
-  border-bottom: #fafafa 2px solid;
+  border-bottom: var(--secondary-color) 2px solid;
 }

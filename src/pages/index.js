@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
     <section className="cards">
       <div className="card">
         <div className="card-text">
-          <h2>Expertly Roasted and Brewed Coffee</h2>
+          <h2>Expertly Roasted & Brewed Coffee</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
             ipsum blanditiis voluptas atque alias laudantium! Sapiente cumque
@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => (
       </div>
       <div className="card">
         <div className="card-text">
-          <h2>Warm Atmosphere and Great Company</h2>
+          <h2>Warm Atmosphere & Great Company</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
             esse tempora fuga iste explicabo voluptate, dolores repudiandae
@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => (
             a ut! Vel sunt quisquam quae explicabo. Voluptate, officia!
           </p>
         </div>
-        <Img fluid={data.coffee3.childImageSharp.fluid} />
+        <Img fluid={data.coffeeShop.childImageSharp.fluid} />
       </div>
     </section>
   </Layout>
@@ -61,7 +61,7 @@ export const query = graphql`
         }
       }
     }
-    coffee3: file(relativePath: { eq: "coffee3.jpg" }) {
+    coffeeShop: file(relativePath: { eq: "coffee-shop.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 700) {
           ...GatsbyImageSharpFluid
