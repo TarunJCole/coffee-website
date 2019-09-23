@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import Carousel from "nuka-carousel"
+import { graphql } from "gatsby"
 import { Link as ScrollLink } from "react-scroll"
 
 import Layout from "../components/layout"
@@ -53,6 +54,19 @@ const IndexPage = ({ data }) => (
         <Img fluid={data.coffeeShop.childImageSharp.fluid} />
       </div>
     </section>
+    <section className="carousel">
+      <div className="carousel-title">
+        <h2>Our Venue</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptas
+          eligendi et iure architecto commodi!
+        </p>
+      </div>
+      <Carousel slideWidth="1000px" slidesToShow="1" wrapAround={true}>
+        <Img fluid={data.coffee2.childImageSharp.fluid} />
+        <Img fluid={data.coffeeShop.childImageSharp.fluid} />
+      </Carousel>
+    </section>
   </Layout>
 )
 
@@ -60,14 +74,14 @@ export const query = graphql`
   {
     coffee2: file(relativePath: { eq: "coffee2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     coffeeShop: file(relativePath: { eq: "coffee-shop.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 700) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
