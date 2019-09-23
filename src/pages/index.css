@@ -1,8 +1,8 @@
+/* landing */
 #landing {
   min-width: 100vw;
   min-height: 100vh;
-  background: url(../images/coffee/coffee-edit.jpg) no-repeat center 40% / cover
-    fixed;
+  background: url(../images/coffee-edit.jpg) no-repeat center 40% / cover fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,4 +22,38 @@
 #landing p.lead {
   font-size: 1.25rem;
   color: var(--light-color);
+}
+
+/* cards */
+section.cards {
+  padding: 4rem 2rem;
+  background: var(--primary-color);
+}
+
+section.cards .card {
+  max-width: 80%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  background: var(--secondary-color);
+}
+
+section.cards .card .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+section.cards .card .card-text h2 {
+  margin-bottom: 1rem;
+}
+
+/* alternate image side */
+section.cards .card:nth-child(even) {
+  direction: rtl;
 }
