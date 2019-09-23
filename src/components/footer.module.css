@@ -3,9 +3,6 @@ footer {
   width: 100vw;
   justify-content: space-between;
   padding: 1rem 10rem;
-  /* remove this margin */
-  margin-top: 500px;
-  /* remove this margin */
   background: var(--dark-color);
   color: var(--light-color);
   font-size: 1.1rem;
