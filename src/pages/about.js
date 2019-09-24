@@ -37,7 +37,6 @@ export default function About() {
               perspiciatis et dolore. Est ducimus consequuntur corrupti.
             </p>
           </div>
-          <hr />
           <div>
             <h2>What We Do</h2>
             <p>
