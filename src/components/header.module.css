@@ -29,6 +29,11 @@ header nav ul li {
   transition: border 0.3s ease-in-out;
 }
 
+header nav ul li a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
 header nav ul li:hover {
   border-bottom: var(--secondary-color) 2px solid;
 }

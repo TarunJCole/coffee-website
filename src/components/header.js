@@ -31,10 +31,18 @@ export default class Header extends Component {
           </div>
           <div>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Menu</li>
-              <li>Contact</li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about/">About</Link>
+              </li>
+              <li>
+                <Link to="/menu/">Menu</Link>
+              </li>
+              <li>
+                <Link to="/contact/">Contact</Link>
+              </li>
             </ul>
           </div>
         </nav>
