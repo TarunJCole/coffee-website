@@ -1,0 +1,44 @@
+#about section.title {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: url(../images/coffee3.jpg) no-repeat center center / cover fixed;
+  color: var(--light-color);
+}
+
+#about section.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--primary-color);
+  line-height: 1.3;
+}
+
+#about section.about div {
+  margin: 4rem;
+}
+
+#about section.about div h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+/* media */
+@media (max-width: 450px) {
+  #about section.title {
+    min-height: 45vh;
+    font-size: 2rem;
+  }
+
+  #about section.about {
+    padding: 0;
+    text-align: center;
+  }
+
+  #about section.about div h2 {
+    font-size: 1.8rem;
+  }
+}
