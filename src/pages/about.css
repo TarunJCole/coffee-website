@@ -12,8 +12,8 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  background: var(--primary-color);
   line-height: 1.3;
+  background: var(--light-color);
 }
 
 #about section.about div {
