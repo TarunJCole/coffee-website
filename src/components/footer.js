@@ -10,10 +10,18 @@ export default function Footer() {
       <div>
         <h3>Links</h3>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about/">About</Link>
+          </li>
+          <li>
+            <Link to="/menu/">Menu</Link>
+          </li>
+          <li>
+            <Link to="/contact/">Contact</Link>
+          </li>
         </ul>
       </div>
       <div>

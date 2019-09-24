@@ -27,6 +27,15 @@ footer div ul li {
   margin: 1rem 0;
 }
 
+footer div ul li a {
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+footer div ul li a:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
 footer div a {
   color: var(--light-color);
   text-decoration: none;
