@@ -56,20 +56,32 @@ section.cards .card:nth-child(even) {
 
 /* carousel */
 section.carousel {
-  max-width: 1000px;
-  margin: 0 auto 4rem auto;
   text-align: center;
   line-height: 1.5;
+  margin: 0 auto;
+}
+
+section.carousel img {
+  max-height: 90vh;
+}
+
+section.carousel .slider-frame {
+  max-height: 90vh;
 }
 
 section.carousel .carousel-title {
   text-align: center;
   line-height: 1.5;
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+  margin: 4rem;
 }
 
 section.carousel .carousel-title h2 {
   font-size: 2.5rem;
   overflow: hidden;
+}
+
+section.carousel .paging-dot {
+  background: var(--light-color) !important;
+  margin: 0 0.3rem;
 }

@@ -62,9 +62,10 @@ const IndexPage = ({ data }) => (
           eligendi et iure architecto commodi!
         </p>
       </div>
-      <Carousel slideWidth="1000px" slidesToShow="1" wrapAround={true}>
+      <Carousel width="100%" slidesToShow="1">
         <Img fluid={data.coffee2.childImageSharp.fluid} />
         <Img fluid={data.coffeeShop.childImageSharp.fluid} />
+        <Img fluid={data.coffee2.childImageSharp.fluid} />
       </Carousel>
     </section>
   </Layout>
@@ -74,14 +75,14 @@ export const query = graphql`
   {
     coffee2: file(relativePath: { eq: "coffee2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 1500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     coffeeShop: file(relativePath: { eq: "coffee-shop.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 1500) {
           ...GatsbyImageSharpFluid
         }
       }
