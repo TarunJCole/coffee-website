@@ -75,12 +75,44 @@ export const query = graphql`
   {
     coffee2: file(relativePath: { eq: "coffee2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1500) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     coffeeShop: file(relativePath: { eq: "coffee-shop.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+    shopOne: file(relativePath: { eq: "shop1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+    shopTwo: file(relativePath: { eq: "shop2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+    shopThree: file(relativePath: { eq: "shop3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+    shopFour: file(relativePath: { eq: "shop4.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
           ...GatsbyImageSharpFluid
