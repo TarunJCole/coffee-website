@@ -1,9 +1,12 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default function Menu() {
+import "./menu.css"
+
+export default function Menu({ data }) {
   return (
     <Layout>
       <SEO title="Menu" />
@@ -17,4 +20,10 @@ export default function Menu() {
       </div>
     </Layout>
   )
+}
+
+// export const query = graphql``
+
+Menu.propTypes = {
+  data: PropTypes.object.isRequired,
 }
