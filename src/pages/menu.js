@@ -55,6 +55,18 @@ const Menu = ({ data }) => {
                 </p>
               </div>
             </div>
+            <div className="menu-card">
+              <Img fluid={data.menu4.childImageSharp.fluid} />
+              <div className="menu-card-text">
+                <h2>Ground Coffee</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                  quam velit voluptate veniam dolore quaerat laudantium
+                  veritatis. Atque nisi at laborum sunt eveniet earum distinctio
+                  minima vero. Voluptatum, a quasi?
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -79,6 +91,13 @@ export const query = graphql`
       }
     }
     menu3: file(relativePath: { eq: "menu3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    menu4: file(relativePath: { eq: "menu4.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
