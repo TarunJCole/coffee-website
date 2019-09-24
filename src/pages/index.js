@@ -63,9 +63,10 @@ const IndexPage = ({ data }) => (
         </p>
       </div>
       <Carousel width="100%" slidesToShow="1">
-        <Img fluid={data.coffee2.childImageSharp.fluid} />
-        <Img fluid={data.coffeeShop.childImageSharp.fluid} />
-        <Img fluid={data.coffee2.childImageSharp.fluid} />
+        <Img fluid={data.shopOne.childImageSharp.fluid} />
+        <Img fluid={data.shopTwo.childImageSharp.fluid} />
+        <Img fluid={data.shopThree.childImageSharp.fluid} />
+        <Img fluid={data.shopFour.childImageSharp.fluid} />
       </Carousel>
     </section>
   </Layout>
@@ -87,7 +88,6 @@ export const query = graphql`
         }
       }
     }
-  }
     shopOne: file(relativePath: { eq: "shop1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
@@ -95,7 +95,6 @@ export const query = graphql`
         }
       }
     }
-  }
     shopTwo: file(relativePath: { eq: "shop2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
@@ -103,7 +102,6 @@ export const query = graphql`
         }
       }
     }
-  }
     shopThree: file(relativePath: { eq: "shop3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
@@ -111,7 +109,6 @@ export const query = graphql`
         }
       }
     }
-  }
     shopFour: file(relativePath: { eq: "shop4.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
