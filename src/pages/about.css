@@ -26,31 +26,16 @@
   overflow: hidden;
 }
 
-/* media */
-@media (max-width: 450px) {
-  #about section.title {
-    min-height: 45vh;
-    font-size: 2rem;
-  }
-
-  #about section.about {
-    padding: 0;
-    text-align: center;
-  }
-
-  #about section.about div h2 {
-    font-size: 1.8rem;
-  }
-}
-
 /* MEDIA */
 @media (max-width: 770px) {
   #about section.title {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    text-align: center;
   }
 
   #about section.about div {
     margin: 4rem 2rem;
+    text-align: center;
   }
 }

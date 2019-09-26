@@ -58,3 +58,30 @@
   margin: 1rem 0;
   cursor: pointer;
 }
+
+/* MEDIA */
+@media (max-width: 770px) {
+  #contact section.title {
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  #contact section.contact {
+    display: block;
+  }
+
+  #contact section.contact .sidebar {
+    display: none;
+  }
+
+  #contact section.contact .contact-form form {
+    width: 80%;
+    margin: 1rem;
+  }
+
+  #contact section.contact .contact-form form > *:last-child {
+    align-self: center;
+    width: 50%;
+  }
+}
