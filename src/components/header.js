@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
+import { Link as ScrollLink } from "react-scroll"
 import headerStyle from "./header.module.css"
 
 export default class Header extends Component {
@@ -27,7 +28,9 @@ export default class Header extends Component {
       <header style={headerStyle} id="page-header">
         <nav>
           <div>
-            <h2>Coffee House</h2>
+            <ScrollLink to="page-header" smooth={true}>
+              <h2>Coffee House</h2>
+            </ScrollLink>
           </div>
           <div>
             <ul>
