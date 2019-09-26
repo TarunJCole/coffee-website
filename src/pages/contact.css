@@ -21,6 +21,8 @@
 }
 
 #contact section.contact .sidebar li {
+  display: flex;
+  align-items: center;
   padding: 1rem 2rem;
   margin: 1rem;
   background: var(--secondary-color);

@@ -19,25 +19,33 @@ export default function Contact() {
           <div className="sidebar">
             <ul className="contact-list">
               <li className="contact-item">
-                <IconContext.Provider value={{ size: "2rem" }}>
+                <IconContext.Provider
+                  value={{ size: "2rem", style: { marginRight: "1rem" } }}
+                >
                   <FaEnvelope />
                 </IconContext.Provider>
                 email@email.com
               </li>
               <li className="contact-item">
-                <IconContext.Provider value={{ size: "2rem" }}>
+                <IconContext.Provider
+                  value={{ size: "2rem", style: { marginRight: "1rem" } }}
+                >
                   <FaPhone />
                 </IconContext.Provider>
                 01234 567890
               </li>
               <li className="contact-item">
-                <IconContext.Provider value={{ size: "2rem" }}>
+                <IconContext.Provider
+                  value={{ size: "2rem", style: { marginRight: "1rem" } }}
+                >
                   <FaFacebook />
                 </IconContext.Provider>
                 Facebook
               </li>
               <li className="contact-item">
-                <IconContext.Provider value={{ size: "2rem" }}>
+                <IconContext.Provider
+                  value={{ size: "2rem", style: { marginRight: "1rem" } }}
+                >
                   <FaTwitter />
                 </IconContext.Provider>
                 Twitter
