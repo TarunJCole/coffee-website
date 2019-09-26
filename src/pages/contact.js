@@ -3,6 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import "./contact.css"
+
 export default function Contact() {
   return (
     <Layout>
