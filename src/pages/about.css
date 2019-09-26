@@ -42,3 +42,15 @@
     font-size: 1.8rem;
   }
 }
+
+/* MEDIA */
+@media (max-width: 770px) {
+  #about section.title {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  #about section.about div {
+    margin: 4rem 2rem;
+  }
+}
