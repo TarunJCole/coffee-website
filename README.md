@@ -1,3 +1,3 @@
 # Example Coffee Website
 
-Example webisite for a coffee shop business.
+Example website for a coffee shop business.
