@@ -52,3 +52,32 @@
 #menu .menu-items .menu-card .menu-card-text h2 {
   margin-bottom: 1rem;
 }
+
+/* MEDIA */
+@media (max-width: 770px) {
+  #menu section.title {
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  #menu .menu-items {
+    display: block;
+    margin: 2rem 1rem;
+  }
+
+  #menu .menu-items .menu-card {
+    margin-bottom: 2rem;
+  }
+
+  #menu .menu-items .menu-card:last-child {
+    margin-bottom: 0;
+  }
+
+  #menu .menu-items .menu-card .menu-card-text {
+    opacity: 1;
+    background: rgba(240, 240, 240, 0.75);
+    overflow: hidden;
+    padding-top: 1rem;
+  }
+}
