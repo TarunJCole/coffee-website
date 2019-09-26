@@ -1,4 +1,6 @@
 import React from "react"
+import { IconContext } from "react-icons"
+import { FaFacebook, FaTwitter, FaEnvelope, FaPhone } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -16,10 +18,30 @@ export default function Contact() {
         <section className="contact">
           <div className="sidebar">
             <ul className="contact-list">
-              <li className="contact-item">Email</li>
-              <li className="contact-item">Phone</li>
-              <li className="contact-item">Facebook</li>
-              <li className="contact-item">Twitter</li>
+              <li className="contact-item">
+                <IconContext.Provider value={{ size: "2rem" }}>
+                  <FaEnvelope />
+                </IconContext.Provider>
+                email@email.com
+              </li>
+              <li className="contact-item">
+                <IconContext.Provider value={{ size: "2rem" }}>
+                  <FaPhone />
+                </IconContext.Provider>
+                01234 567890
+              </li>
+              <li className="contact-item">
+                <IconContext.Provider value={{ size: "2rem" }}>
+                  <FaFacebook />
+                </IconContext.Provider>
+                Facebook
+              </li>
+              <li className="contact-item">
+                <IconContext.Provider value={{ size: "2rem" }}>
+                  <FaTwitter />
+                </IconContext.Provider>
+                Twitter
+              </li>
             </ul>
           </div>
           <div className="contact-form">
